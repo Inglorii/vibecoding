@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Penguin 1-1</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="game-shell">
+    <header class="topbar">
+      <div class="brand"><span class="brand-mark">P</span><span>PENGUIN<br><b>ADVENTURE</b></span></div>
+      <div class="level-label">WORLD <strong>1 - 1</strong></div>
+      <button id="soundButton" class="sound-button" aria-label="Toggle sound">♪</button>
+    </header>
+
+    <section class="game-wrap" aria-label="Penguin Adventure game">
+      <canvas id="game" width="960" height="540" aria-label="A side-scrolling platform game"></canvas>
+      <div id="startCard" class="start-card">
+        <div class="mini-penguin">🐧</div>
+        <h1>Ready, Waddle, Go!</h1>
+        <p>Help Pip make it across the sunny mushroom meadows.</p>
+        <button id="startButton">PLAY LEVEL <span>→</span></button>
+        <small>Move with <b>← →</b> or <b>A D</b> · Jump with <b>SPACE</b></small>
+      </div>
+      <div id="hud" class="hud hidden">
+        <span>COINS <b id="coinCount">00</b></span>
+        <span class="center-hud">WORLD <b>1 - 1</b></span>
+        <span>TIME <b id="timeCount">300</b></span>
+      </div>
+      <div id="endCard" class="end-card hidden">
+        <div class="flag-emoji">🏁</div>
+        <h2>Level Complete!</h2>
+        <p>Pip waddled all the way home.</p>
+        <button id="againButton">PLAY AGAIN</button>
+      </div>
+    </section>
+
+    <footer><span>AN ORIGINAL PENGUIN PLATFORMER</span><span>© ARCTIC ARCADE CLUB</span></footer>
+  </main>
+  <script src="game.js"></script>
+</body>
+</html>
